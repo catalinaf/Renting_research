@@ -1,6 +1,5 @@
 from rental_listings import RentalListings
 from research_results import ResearchResults
-import time
 
 rental_listings = RentalListings()
 rental_listings.get_property_links()
@@ -14,5 +13,4 @@ for i in range(len(rental_listings.addresses)):
         rental_listings.prices[i],
         rental_listings.property_links[i]
     )
-    time.sleep(2)
 research_results.quit()
